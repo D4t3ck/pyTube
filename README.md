@@ -36,35 +36,35 @@ Note the path to the ffmpeg.exe file (e.g., C:/Users/yourusername/ffmpeg/bin/ffm
 
 1. Clone or Download the Repository
 
-Clone this repository using Git:
+  Clone this repository using Git:
 
-git clone https://github.com/yourusername/yt-downloader.git
+  git clone https://github.com/yourusername/yt-downloader.git
 
-Alternatively, you can download the repository as a ZIP file and extract it.
+  Alternatively, you can download the repository as a ZIP file and extract it.
 
 2. Update the ffmpeg Path
 
-Open the Python script (youtube_downloader.py) in a text editor.
+  Open the Python script (youtube_downloader.py) in a text editor.
 
-Update the ffmpeg_path variable with the full path to your ffmpeg.exe file.
+  Update the ffmpeg_path variable with the full path to your ffmpeg.exe file.
 
-Example:
+  Example:
 
-ffmpeg_path = r'C:/Users/yourusername/ffmpeg/bin/ffmpeg.exe'
+  ffmpeg_path = r'C:/Users/yourusername/ffmpeg/bin/ffmpeg.exe'
 
 3. Run the Script
 
-Open a terminal or command prompt in the script's directory.
+  Open a terminal or command prompt in the script's directory.
 
-Run the script using:
+  Run the script using:
 
-python youtube_downloader.py
+  python youtube_downloader.py
 
 4. Input the YouTube URL
 
-Enter the YouTube video URL when prompted.
+  Enter the YouTube video URL when prompted.
 
-The video will be downloaded to your Desktop.
+  The video will be downloaded to your Desktop.
 
 
 # Key Highlights
@@ -79,17 +79,17 @@ The outtmpl parameter saves the downloaded file with the video's title as the fi
 
 1. FFmpeg not found
 
-Ensure the ffmpeg_path variable points to the correct location of ffmpeg.exe.
+- Ensure the ffmpeg_path variable points to the correct location of ffmpeg.exe.
 
 2. yt-dlp download issues
 
-Ensure yt-dlp is properly installed by running:
+- Ensure yt-dlp is properly installed by running:
 
 pip show yt-dlp
 
 3. Permission errors
 
-Run the script with administrator privileges if needed.
+- Run the script with administrator privileges if needed.
 
 # License
 
