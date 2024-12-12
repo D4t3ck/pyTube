@@ -75,7 +75,7 @@ The outtmpl parameter saves the downloaded file with the video's title as the fi
 
 # Troubleshooting
 
-- Common Errors
+## Common Errors
 
 1. FFmpeg not found
 
@@ -85,7 +85,9 @@ The outtmpl parameter saves the downloaded file with the video's title as the fi
 
 - Ensure yt-dlp is properly installed by running:
 
+```bash
 pip show yt-dlp
+```
 
 3. Permission errors
 
