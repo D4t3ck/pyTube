@@ -1,8 +1,8 @@
-#YouTube Video Downloader with yt-dlp
+# YouTube Video Downloader with yt-dlp
 
 This is a Python script for downloading YouTube videos using the yt-dlp library. It supports downloading the best available video and audio quality, merging them using ffmpeg, and saving them to your Desktop.
 
-#Features
+# Features
 
 Downloads the best video and audio quality from YouTube.
 
@@ -12,7 +12,7 @@ Saves the downloaded files directly to the user's Desktop.
 
 Simple and user-friendly input for YouTube URLs.
 
-#Prerequisites
+# Prerequisites
 
 Python 3.7 or higher
 
@@ -32,7 +32,7 @@ Extract the FFmpeg folder and ensure the ffmpeg.exe file is located in the bin d
 
 Note the path to the ffmpeg.exe file (e.g., C:/Users/yourusername/ffmpeg/bin/ffmpeg.exe).
 
-#How to Use
+# How to Use
 
 Clone or Download the Repository
 
@@ -67,13 +67,13 @@ Enter the YouTube video URL when prompted.
 The video will be downloaded to your Desktop.
 
 
-#Key Highlights
+# Key Highlights
 
 The ffmpeg_location parameter ensures that yt-dlp uses the correct FFmpeg binary.
 
 The outtmpl parameter saves the downloaded file with the video's title as the filename, ensuring user-friendly naming.
 
-#Troubleshooting
+# Troubleshooting
 
 Common Errors
 
@@ -91,7 +91,7 @@ Permission errors
 
 Run the script with administrator privileges if needed.
 
-#License
+# License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
