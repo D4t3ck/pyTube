@@ -2,110 +2,103 @@
 
 This is a Python script for downloading YouTube videos using the yt-dlp library. It supports downloading the best available video and audio quality, merging them using ffmpeg, and saving them to your Desktop.
 
-# Features
+## Features
 
-Downloads the best video and audio quality from YouTube.
+- Downloads the best video and audio quality from YouTube.
+- Merges video and audio using FFmpeg.
+- Saves the downloaded files directly to the user's Desktop.
+- Simple and user-friendly input for YouTube URLs.
 
-Merges video and audio using FFmpeg.
+## Prerequisites
 
-Saves the downloaded files directly to the user's Desktop.
+1. **Python 3.7 or higher**
 
-Simple and user-friendly input for YouTube URLs.
+   - Make sure Python is installed on your system. You can download it from [python.org](https://www.python.org/).
 
-# Prerequisites
+2. **yt-dlp**
 
-Python 3.7 or higher
+   - Install the `yt-dlp` library by running:
 
-Make sure Python is installed on your system. You can download it from python.org.
+     ```bash
+     pip install yt-dlp
+     ```
 
-yt-dlp
+3. **FFmpeg**
 
-Install the yt-dlp library by running:
+   - Download FFmpeg from [ffmpeg.org](https://ffmpeg.org/).
+   - Extract the FFmpeg folder and ensure the `ffmpeg.exe` file is located in the `bin` directory.
+   - Note the path to the `ffmpeg.exe` file (e.g., `C:/Users/yourusername/ffmpeg/bin/ffmpeg.exe`).
 
-```bash
-pip install yt-dlp
-```
+## How to Use
 
-FFmpeg
+1. **Clone or Download the Repository**
 
-Download FFmpeg from ffmpeg.org.
+   - Clone this repository using Git:
 
-Extract the FFmpeg folder and ensure the ffmpeg.exe file is located in the bin directory.
+     ```bash
+     git clone https://github.com/yourusername/yt-downloader.git
+     ```
 
-Note the path to the ffmpeg.exe file (e.g., C:/Users/yourusername/ffmpeg/bin/ffmpeg.exe).
+   - Alternatively, you can download the repository as a ZIP file and extract it.
 
-# How to Use
+2. **Update the FFmpeg Path**
 
-1. Clone or Download the Repository
+   - Open the Python script (`youtube_downloader.py`) in a text editor.
+   - Update the `ffmpeg_path` variable with the full path to your `ffmpeg.exe` file.
 
-  Clone this repository using Git:
+     Example:
 
-```bash
-  git clone https://github.com/yourusername/yt-downloader.git
-```
+     ```python
+     ffmpeg_path = r'C:/Users/yourusername/ffmpeg/bin/ffmpeg.exe'
+     ```
 
-  Alternatively, you can download the repository as a ZIP file and extract it.
+3. **Run the Script**
 
-2. Update the ffmpeg Path
+   - Open a terminal or command prompt in the script's directory.
+   - Run the script using:
 
-  Open the Python script (youtube_downloader.py) in a text editor.
+     ```bash
+     python youtube_downloader.py
+     ```
 
-  Update the ffmpeg_path variable with the full path to your ffmpeg.exe file.
+4. **Input the YouTube URL**
 
-  Example:
+   - Enter the YouTube video URL when prompted.
+   - The video will be downloaded to your Desktop.
 
-  ffmpeg_path = r'C:/Users/yourusername/ffmpeg/bin/ffmpeg.exe'
+## Key Highlights
 
-3. Run the Script
+- The `ffmpeg_location` parameter ensures that yt-dlp uses the correct FFmpeg binary.
+- The `outtmpl` parameter saves the downloaded file with the video's title as the filename, ensuring user-friendly naming.
 
-  Open a terminal or command prompt in the script's directory.
+## Troubleshooting
 
-  Run the script using:
+### Common Errors
 
-```bash
-  python youtube_downloader.py
-```
+1. **FFmpeg not found**
 
-4. Input the YouTube URL
+    - Ensure the `ffmpeg_path` variable points to the correct location of `ffmpeg.exe`.
 
-  Enter the YouTube video URL when prompted.
+2. **yt-dlp download issues**
 
-  The video will be downloaded to your Desktop.
+    - Ensure `yt-dlp` is properly installed by running:
 
+      ```bash
+      pip show yt-dlp
+      ```
 
-# Key Highlights
+3. **Permission errors**
 
-The ffmpeg_location parameter ensures that yt-dlp uses the correct FFmpeg binary.
+    - Run the script with administrator privileges if needed.
 
-The outtmpl parameter saves the downloaded file with the video's title as the filename, ensuring user-friendly naming.
-
-# Troubleshooting
-
-## Common Errors
-
-1. FFmpeg not found
-
-  - Ensure the ffmpeg_path variable points to the correct location of ffmpeg.exe.
-
-2. yt-dlp download issues
-
-  - Ensure yt-dlp is properly installed by running:
-
-```bash
-pip show yt-dlp
-```
-
-3. Permission errors
-
-  - Run the script with administrator privileges if needed.
-
-# License
+## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Contributions
+## Contributions
 
 Contributions and suggestions are welcome! Feel free to fork this repository and submit pull requests.
 
-Happy downloading! 🎥🎶
+---
 
+Happy downloading! 🎥🎶
