@@ -79,11 +79,11 @@ The outtmpl parameter saves the downloaded file with the video's title as the fi
 
 1. FFmpeg not found
 
-- Ensure the ffmpeg_path variable points to the correct location of ffmpeg.exe.
+  - Ensure the ffmpeg_path variable points to the correct location of ffmpeg.exe.
 
 2. yt-dlp download issues
 
-- Ensure yt-dlp is properly installed by running:
+  - Ensure yt-dlp is properly installed by running:
 
 ```bash
 pip show yt-dlp
@@ -91,7 +91,7 @@ pip show yt-dlp
 
 3. Permission errors
 
-- Run the script with administrator privileges if needed.
+  - Run the script with administrator privileges if needed.
 
 # License
 
