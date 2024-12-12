@@ -22,7 +22,9 @@ yt-dlp
 
 Install the yt-dlp library by running:
 
+```bash
 pip install yt-dlp
+```
 
 FFmpeg
 
@@ -38,7 +40,9 @@ Note the path to the ffmpeg.exe file (e.g., C:/Users/yourusername/ffmpeg/bin/ffm
 
   Clone this repository using Git:
 
+```bash
   git clone https://github.com/yourusername/yt-downloader.git
+```
 
   Alternatively, you can download the repository as a ZIP file and extract it.
 
@@ -58,7 +62,9 @@ Note the path to the ffmpeg.exe file (e.g., C:/Users/yourusername/ffmpeg/bin/ffm
 
   Run the script using:
 
+```bash
   python youtube_downloader.py
+```
 
 4. Input the YouTube URL
 
