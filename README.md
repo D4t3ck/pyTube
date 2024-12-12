@@ -34,7 +34,7 @@ Note the path to the ffmpeg.exe file (e.g., C:/Users/yourusername/ffmpeg/bin/ffm
 
 # How to Use
 
-Clone or Download the Repository
+1. Clone or Download the Repository
 
 Clone this repository using Git:
 
@@ -42,7 +42,7 @@ git clone https://github.com/yourusername/yt-downloader.git
 
 Alternatively, you can download the repository as a ZIP file and extract it.
 
-Update the ffmpeg Path
+2. Update the ffmpeg Path
 
 Open the Python script (youtube_downloader.py) in a text editor.
 
@@ -52,7 +52,7 @@ Example:
 
 ffmpeg_path = r'C:/Users/yourusername/ffmpeg/bin/ffmpeg.exe'
 
-Run the Script
+3. Run the Script
 
 Open a terminal or command prompt in the script's directory.
 
@@ -60,7 +60,7 @@ Run the script using:
 
 python youtube_downloader.py
 
-Input the YouTube URL
+4. Input the YouTube URL
 
 Enter the YouTube video URL when prompted.
 
@@ -75,19 +75,19 @@ The outtmpl parameter saves the downloaded file with the video's title as the fi
 
 # Troubleshooting
 
-Common Errors
+- Common Errors
 
-FFmpeg not found
+1. FFmpeg not found
 
 Ensure the ffmpeg_path variable points to the correct location of ffmpeg.exe.
 
-yt-dlp download issues
+2. yt-dlp download issues
 
 Ensure yt-dlp is properly installed by running:
 
 pip show yt-dlp
 
-Permission errors
+3. Permission errors
 
 Run the script with administrator privileges if needed.
 
